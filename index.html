@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Gerador de PDF teste</title>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Biblioteca HTML2PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Script -->
+<script src="script.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Ficha de RPG</h1>
+        </header>
+        <div id="names">
+            <form id="player-name">
+                <p>Player Name:</p>
+                <input type="text" id="name-input" placeholder="Insert the player name">
+            </form>
+            
+            <form id="character-name">
+                <p>Character Name:</p>
+                <input type="text" id="char-name-input" placeholder="Insert your character name">
+            </form>
+        </div id="origin-class">
+            <form id="char-origin">
+                <p>Origin:</p>
+                <input type="text" id="char-origin-input" placeholder="Insert your character origin">
+            </form>
+
+            <form id="char-class">
+                <p>Class:</p>
+                <select id="class-select">
+                    <option value="fighter">Fighter</option>
+                    <option value="specialist">Specialist</option>
+                    <option value="ocultist">Ocultist</option>
+                </select>
+            </form>
+        </div>
+        <div id="nex-patent">
+            <form id="char-nex-level">
+                <p>Nex</p>
+                <input type="text" id="char-nex-input" placeholder="Insert your NEX%">
+            </form>
+            <form id="char-patent">
+                <p>Patent</p>
+                <select id="patent-select">
+                    <option value="recruit">Recruit</option>
+                    <option value="Soldier">Soldier</option>
+                    <option value="Tenent">Tenent</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
